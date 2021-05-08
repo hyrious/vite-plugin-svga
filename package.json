@@ -2,13 +2,13 @@
   "name": "@hyrious/vite-plugin-svga",
   "version": "0.1.0",
   "description": "SVGA plugin for vite.",
-  "main": "./dist/vite-plugin-svga.umd.js",
+  "main": "./dist/vite-plugin-svga.cjs.js",
   "module": "./dist/vite-plugin-svga.es.js",
   "types": "./src/index.ts",
   "exports": {
     ".": {
       "import": "./dist/vite-plugin-svga.es.js",
-      "require": "./dist/vite-plugin-svga.umd.js"
+      "require": "./dist/vite-plugin-svga.cjs.js"
     }
   },
   "files": [
@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "esbuild-dev build.ts",
     "test": "esbuild-dev test.ts"
   },
   "keywords": [
@@ -31,11 +31,12 @@
     "@hyrious/esbuild-dev": "^0.2.7",
     "@types/node": "^15.0.2",
     "@types/pako": "^1.0.1",
-    "pako": "^2.0.3",
+    "esbuild": "^0.11.20",
+    "svgaplayerweb": "^2.3.2",
     "vite": "^2.2.4"
   },
   "dependencies": {
-    "protobufjs": "^6.11.2",
-    "svgaplayerweb": "^2.3.2"
+    "pako": "^2.0.3",
+    "protobufjs": "^6.11.2"
   }
 }
