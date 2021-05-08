@@ -1,0 +1,41 @@
+{
+  "name": "@hyrious/vite-plugin-svga",
+  "version": "0.1.0",
+  "description": "SVGA plugin for vite.",
+  "main": "./dist/vite-plugin-svga.umd.js",
+  "module": "./dist/vite-plugin-svga.es.js",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-svga.es.js",
+      "require": "./dist/vite-plugin-svga.umd.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "esbuild-dev test.ts"
+  },
+  "keywords": [
+    "svga",
+    "vite"
+  ],
+  "author": "hyrious <hyrious@outlook.com>",
+  "repository": "hyrious/vite-plugin-svga",
+  "license": "MIT",
+  "devDependencies": {
+    "@hyrious/esbuild-dev": "^0.2.7",
+    "@types/node": "^15.0.2",
+    "@types/pako": "^1.0.1",
+    "pako": "^2.0.3",
+    "vite": "^2.2.4"
+  },
+  "dependencies": {
+    "protobufjs": "^6.11.2",
+    "svgaplayerweb": "^2.3.2"
+  }
+}
