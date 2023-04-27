@@ -1,4 +1,6 @@
-# vite-plugin-svga
+# Deprecated! see https://github.com/svga/SVGAPlayer-Web-Lite#vite-svga
+
+# vite-plugin-svga 
 
 > A vite plugin to load [svga](https://github.com/svga/SVGAPlayer-Web) file. Based on [svga-loader](https://github.com/Adamwu1992/svga-loader).
 
